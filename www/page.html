@@ -9,11 +9,224 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<div class="promo">
-    <div class="promo__inner">
-        <h1 class="promo__ttl">Заголовок сайта</h1>
-        <p class="promo__slogan">Описание сайта, типа тут все самое офиггенное и опупенное</p>
-    </div>
+<div class="app">
+    <header class="app__header">
+        <div class="app__logo">
+
+        </div>
+        <div class="app__nav">
+            <a href="#" class="profile-link">
+                <img src="/images/profile-photo.jpg" alt="Jhon" class="profile-link__photo">
+                <div class="profile-link__text">
+                    <span class="profile-link__name">Jhon</span>
+                    <span class="profile-link__vocation">Wrike Team</span>
+                </div>
+                <div class="profile-link__arrow">
+                    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <polygon id="path-1" points="8 8.5 11 5.5 12 6.5 8 10.5 4 6.5 5 5.5"></polygon>
+                        </defs>
+                        <g id="UI/16/arrows/down-semibold" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="colors/MAIN/black" mask="url(#mask-2)" fill="#000000" fill-opacity="0.9" opacity="0.900000036">
+                                <rect id="color" x="0" y="0" width="16" height="16" rx="2"></rect>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </header>
+    <main class="app__main">
+        <div class="app__aside">
+            <div class="app-nav">
+                <div class="app-nav__section">
+                    <div class="app-nav__header app-nav__header--theme-settings">
+                        <strong class="app-nav__title">Personal settings</strong>
+                    </div>
+                    <div class="app-nav__content">
+                        <ul class="nav-links">
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link nav-links__link--theme-active">Profile details</a>
+                            </li>
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link">Account info</a>
+                            </li>
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link">Email preferences</a>
+                            </li>
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link">Work schedule</a>
+                            </li>
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link">Password & security</a>
+                            </li>
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link">Apps access</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="app-nav__section">
+                    <div class="app-nav__header app-nav__header--theme-settings">
+                        <strong class="app-nav__title">Account management</strong>
+                    </div>
+                    <div class="app-nav__content">
+                        <ul class="nav-links">
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link">Subscription</a>
+                            </li>
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link">Billing</a>
+                            </li>
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link">Users & groups</a>
+                            </li>
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link">Request form builder</a>
+                            </li>
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link">Custom workflows</a>
+                            </li>
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link">Activity reports</a>
+                            </li>
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link">Calendars</a>
+                            </li>
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link">Account settings</a>
+                            </li>
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link">Advanced security</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app__content">
+            <div class="app-profile">
+                <h1 class="app-profile__title">Profile details</h1>
+                <div class="app-profile__section">
+                    <form id="personal-form" action="#" class="profile-form">
+                        <div class="profile-form__field-list">
+                            <div class="profile-form__field">
+                                <label class="form-field">
+                                    <span class="form-field__label">First name</span>
+                                    <div class="form-field__wrap">
+                                        <input type="text" class="form-field__input" value="Jhon">
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="profile-form__field">
+                                <label class="form-field">
+                                    <span class="form-field__label">Last name</span>
+                                    <div class="form-field__wrap">
+                                        <input type="text" class="form-field__input" value="Smith">
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="profile-form__field">
+                                <label class="form-field">
+                                    <span class="form-field__label">Company name</span>
+                                    <div class="form-field__wrap">
+                                        <input type="text" class="form-field__input" value="Wrike">
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="profile-form__field">
+                                <label class="form-field">
+                                    <span class="form-field__label">Job title</span>
+                                    <div class="form-field__wrap">
+                                        <input type="text" class="form-field__input" value="UI Developer (crafting team)">
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="profile-form__field">
+                                <label class="form-field">
+                                    <span class="form-field__label">Location</span>
+                                    <div class="form-field__wrap">
+                                        <input type="text" class="form-field__input" value="Saint-Petersburg">
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="profile-form__field">
+                                <label class="form-field">
+                                    <span class="form-field__label">Phone number</span>
+                                    <div class="form-field__wrap">
+                                        <input type="text" class="form-field__input" value="+7 (923) 345-34-32">
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="profile-form__buttons">
+                            <div class="profile-form__buttons-item">
+                                <button type="submit" class="button button--theme-default">Save changes</button>
+                            </div>
+                            <div class="profile-form__buttons-item">
+                                <button type="reset" class="button button--theme-pseudo">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="app-profile__section">
+                    <form id="settings-form" action="#" class="profile-form">
+                        <h2 class="profile-form__title">Workspace settings</h2>
+                        <div class="profile-form__field-list">
+                            <div class="profile-form__field">
+                                <label class="form-field">
+                                    <span class="form-field__label">Time zone</span>
+                                    <div class="form-field__wrap">
+                                        <select name="time-zone" id="time-zone" class="form-field__input">
+                                            <option value="GMT+7">(GMT+7) Pacific day time</option>
+                                            <option value="GMT+6">(GMT+6) Pacific day time</option>
+                                            <option value="GMT+5">(GMT+5) Pacific day time</option>
+                                            <option value="GMT+4">(GMT+4) Pacific day time</option>
+                                        </select>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="profile-form__field">
+                                <label class="form-field">
+                                    <span class="form-field__label">Language</span>
+                                    <div class="form-field__wrap">
+                                        <select name="language" id="language" class="form-field__input">
+                                            <option value="eng">English</option>
+                                            <option value="rus">Russian</option>
+                                            <option value="alb">Albanian</option>
+                                            <option value="chn">chinese</option>
+                                        </select>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="profile-form__field">
+                                <label class="form-field">
+                                    <span class="form-field__label">New task created by default as</span>
+                                    <div class="form-field__wrap">
+                                        <select name="tasks" id="tasks" class="form-field__input">
+                                            <option value="backlogged">Backlogged</option>
+                                            <option value="new">New</option>
+                                        </select>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="profile-form__options">
+                            тут чекбоксы
+                        </div>
+                        <div class="profile-form__buttons">
+                            <div class="profile-form__buttons-item">
+                                <button type="submit" class="button button--theme-default" disabled>Save changes</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
 </div>
 
 <script src="scripts/script.js"></script>

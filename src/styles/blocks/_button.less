@@ -1,10 +1,32 @@
+@color-text-disabled: rgba(@black, .32);
+
 @border-radius: 2px;
+@vertical-button-field: 4px;
+@horizontal-button-field: 16px;
 
 .button {
+  display: inline-block;
+  padding: @vertical-button-field 0;
+  border: 1px solid transparent;
+  font-size: @font-base-size;
+  line-height: @font-base-line-height;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+}
+
+.button--theme-default {
+  padding-left: @horizontal-button-field;
+  padding-right: @horizontal-button-field;
   border: 1px solid @color-highlight;
   border-radius: @border-radius;
-  font-size: @font-base-size;
-  text-decoration: none;
   color: @color-main-font-invert;
   background-color: @color-highlight;
 
@@ -12,11 +34,58 @@
   &:focus {
     border-color: @color-highlight-third;
     background-color: @color-highlight-third;
-    outline: none;
   }
 
   &:active {
     border-color: @color-highlight-second;
     background-color: @color-highlight-second;
+  }
+
+  &:disabled,
+  &.button--theme-disabled {
+    border-color: @color-border;
+  }
+}
+
+.button--theme-pseudo {
+  color: @color-main-font;
+
+  &:hover,
+  &:focus {
+    color: @color-highlight-third;
+  }
+
+  &:active {
+    color: @color-highlight-second;
+  }
+}
+
+.button:disabled,
+.button--theme-disabled {
+  color: @color-text-disabled;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+// guide styles
+.button--theme-default {
+  &.button--guide-hover {
+    border-color: @color-highlight-third;
+    background-color: @color-highlight-third;
+  }
+
+  &.button--guide-active {
+    border-color: @color-highlight-second;
+    background-color: @color-highlight-second;
+  }
+}
+
+.button--theme-pseudo {
+  &.button--guide-hover {
+    color: @color-highlight-third;
+  }
+
+  &.button--guide-active {
+    color: @color-highlight-second;
   }
 }

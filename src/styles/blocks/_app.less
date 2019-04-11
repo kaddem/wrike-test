@@ -1,0 +1,40 @@
+@vertical-indent-header: 12px;
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: @color-main-font-invert;
+  background-color: @color-panel;
+}
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: @vertical-indent-header 0;
+}
+
+.app__main {
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.app__aside {
+  width: 256px;
+  min-width: 256px;
+  height: 100%;
+  padding-right: 32px;
+  overflow-y: auto;
+}
+
+.app__content {
+  flex-grow: 1;
+  height: 100%;
+  margin-right: 4px;
+  overflow-y: auto;
+  border-radius: 2px;
+  color: @color-main-font;
+  background-color: @white;
+}
