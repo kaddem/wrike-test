@@ -1,3 +1,43 @@
 body {
   font-family: @font;
+  color: @color-main-font;
+}
+
+h1 {
+  font-size: @font-h1-size;
+  font-weight: @font-weight-semi-bold;
+  line-height: @font-h1-line-height;
+}
+
+h2 {
+  font-size: @font-h2-size;
+  font-weight: @font-weight-semi-bold;
+  line-height: @font-h2-line-height;
+}
+
+h3 {
+  font-size: @font-h3-size;
+  font-weight: @font-weight-semi-bold;
+  line-height: @font-h3-line-height;
+}
+
+p {
+  font-size: @font-base-size;
+  font-weight: @font-weight-normal;
+  line-height: @font-base-line-height;
+}
+
+.text-small {
+  font-size: @font-base-small-size;
+  font-weight: @font-weight-normal;
+  line-height: @font-base-small-size;
+}
+
+a {
+  color: @color-highlight;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

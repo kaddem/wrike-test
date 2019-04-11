@@ -1,0 +1,39 @@
+.guide {
+  width: 770px;
+  margin: 0 auto;
+}
+
+.guide__header {
+  padding: 25px 0 10px 0;
+  border-bottom: 1px solid @color-border;
+}
+
+.guide__title {
+  margin: 0;
+}
+
+.guide__content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.guide__colors {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.guide__colors-item {
+  flex-basis: 30%;
+  padding-right: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  &:nth-child(3n+2) {
+    flex-basis: 38%;
+  }
+
+  &:nth-child(3n+3) {
+    flex-basis: 32%;
+    padding-right: 0;
+  }
+}

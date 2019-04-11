@@ -1,0 +1,22 @@
+@border-radius: 2px;
+
+.button {
+  border: 1px solid @color-highlight;
+  border-radius: @border-radius;
+  font-size: @font-base-size;
+  text-decoration: none;
+  color: @color-main-font-invert;
+  background-color: @color-highlight;
+
+  &:hover,
+  &:focus {
+    border-color: @color-highlight-third;
+    background-color: @color-highlight-third;
+    outline: none;
+  }
+
+  &:active {
+    border-color: @color-highlight-second;
+    background-color: @color-highlight-second;
+  }
+}
