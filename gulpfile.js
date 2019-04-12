@@ -11,16 +11,16 @@ const browserSync = require('browser-sync').create();
 // Path
 const path = {
     www: {
-        style: 'www/style/',
-        html : 'www/*.html'
+        style: 'docs/style/',
+        html : 'docs/*.html'
     },
     src: {
         style: 'src/styles/*.less'
     },
     watch: {
         srcStyle   : 'src/styles/**/*.less',
-        buildStyle : 'www/style/*.css',
-        html       : 'www/*.html'
+        buildStyle : 'docs/style/*.css',
+        html       : 'docs/*.html'
     }
 }
 
@@ -48,7 +48,7 @@ exports.styles = styles;
 
 function serve() {
     browserSync.init({
-        server: "./www"
+        server: "./docs"
     });
 
     watch([
