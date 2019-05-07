@@ -1,6 +1,7 @@
 'use strict';
 
 const { series, parallel, src, dest, watch } = require('gulp');
+const autoprefixer = require('autoprefixer');
 const less = require('gulp-less');
 const postcss = require('gulp-postcss');
 const mqpacker = require('css-mqpacker');
@@ -37,6 +38,10 @@ function styles() {
             }))
         )
         .pipe(postcss([
+            autoprefixer({
+                grid: true,
+                browsers: ['last 2 version']
+            }),
             mqpacker({
                 sort: true
             })

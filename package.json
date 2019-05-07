@@ -19,6 +19,7 @@
   "homepage": "https://github.com/kaddem/student-startpack#readme",
   "dependencies": {},
   "devDependencies": {
+    "autoprefixer": "^9.5.1",
     "browser-sync": "^2.23.6",
     "css-mqpacker": "^6.0.2",
     "gulp": "^4.0.0",
