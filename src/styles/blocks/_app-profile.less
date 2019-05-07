@@ -1,0 +1,25 @@
+.app-profile {
+  display: grid;
+  grid-template-areas:
+          "profile-header"
+          "profile-personal"
+          "profile-settings";
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  width: 100%;
+  //margin: 0 auto;
+}
+
+.app-profile__title {
+  grid-area: profile-header;
+}
+
+.app-profile__section {
+  &:nth-of-type(1) {
+    grid-area: profile-personal;
+  }
+
+  &:nth-of-type(2) {
+    grid-area: profile-settings;
+  }
+}

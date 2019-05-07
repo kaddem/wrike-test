@@ -1,0 +1,21 @@
+.profile-form {
+
+}
+
+.profile-form__field-list {
+  display: grid;
+  grid-gap: 24px 32px;
+  grid-template-areas:
+          "field-left field-right";
+  grid-template-columns: 300px 300px;
+}
+
+.profile-form__field {
+  &:nth-child(1) {
+    grid-area: field-left;
+  }
+
+  &:nth-child(2) {
+    grid-area: field-right;
+  }
+}
